@@ -1,0 +1,97 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    background-color: #a52c2c; /* Set background color */
+}
+
+.EventCat {
+    background-color: #a52c2c; /* Set background color */
+    height: 90vh; 
+    overflow: hidden;
+}
+
+.topics {
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    width: 100vw; /* Set row width to 100vw */
+    justify-content: space-around;
+}
+
+.column {
+    width: 45vw; /* Set column width to 50vw */
+    margin: 2vh;
+    height: 40vh; /* Set column height to 45vh */
+    background-color: #ffffff; /* Add background color */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+    cursor: pointer;
+    flex-direction: column;
+    padding: 0 3vh;
+}
+
+.column:hover,
+.column[data-hover="true"] {
+    transform: scale(1.05); /* Scale up on hover */
+    background-color: rgba(238, 170, 170, 0.8);
+}
+
+h1 {
+    font-size: 1.5em; /* Set font size */
+    color: #333333; /* Set text color */
+    text-align: center;
+    margin: 0;
+}
+
+.scrollable {
+    overflow: scroll; /* Enable vertical scrolling */
+}
+
+.cursor {
+    position: relative;
+    display: inline-block;
+    width: 10px; /* Set width */
+    height: 10px; /* Set height */
+    background-color: black; /* Set color */
+    border-radius: 50%; /* Create a circle */
+    pointer-events: none; /* Prevent cursor from interacting with cursor element */
+    z-index: 9999; /* Ensure cursor is above other elements */
+  }
+  .circle-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it appears on top of everything */
+  }
+  
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000; /* Change color as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .timer {
+    color: #fff; /* Change color as needed */
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
